@@ -8,7 +8,22 @@ body,
   padding: 0;
 }
 
+#storybook-root {
+  height: 100%;
+   display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 30px;
+  
+}
+
 @theme {
+  /* 🔹 Neutral (Gray) */
+--color-neutral:        oklch(0.97 0 321); /* базовый серый */
+--color-neutral-hover:  oklch(0.87 0.01 270); /* чуть темнее при наведении */
+--color-neutral-active: oklch(0.80 0.02 270); /* ещё темнее при нажатии */
+
   /* 🔹 Dark */
   --color-dark: oklch(0.3 0.05 270);
   --color-dark-hover: oklch(0.25 0.05 270);
@@ -43,4 +58,6 @@ body,
   --color-error: oklch(0.65 0.2 30);
   --color-error-hover: oklch(0.6 0.2 30);
   --color-error-active: oklch(0.52 0.2 30);
-}
+
+
+ }
