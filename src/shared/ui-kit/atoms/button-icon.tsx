@@ -11,7 +11,7 @@ export const ButtonIconUi = ({ Icon, handleButton, iconColor }: Props) => {
     <button
       type="button"
       className={clsx(
-        'active:scale-90 transition-transform duration-100',
+        'active:scale-90 transition-transform duration-100 text-sm',
         ' hover:scale-110, cursor-pointer',
         iconColor,
       )}

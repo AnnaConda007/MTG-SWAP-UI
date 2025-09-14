@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Accordion } from '../../molecules/accordion';
-import { mock } from '../mocks';
+import { mock } from '../mock/mocks';
 const meta = {
   title: 'Molecules/Accordion',
   component: Accordion,

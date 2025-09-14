@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-import { ButtonIconUi } from '../../atoms/button';
+import { ButtonIconUi } from '../../atoms/button-icon';
 
 const meta = {
-  title: 'Atoms/Button',
+  title: 'Atoms/Button-icon',
   component: ButtonIconUi,
   parameters: {
     layout: 'centered',

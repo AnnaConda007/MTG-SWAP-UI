@@ -21,6 +21,8 @@ body,
 @theme {
   /* 🔹 Neutral (Gray) */
 --color-neutral:        oklch(0.97 0 321); /* базовый серый */
+--color-neutral-dark:       oklch(0.7418 0 0); /* базовый серый */
+--color-neutral-light:      oklch(1 0 0); /* базовый серый */
 --color-neutral-hover:  oklch(0.87 0.01 270); /* чуть темнее при наведении */
 --color-neutral-active: oklch(0.80 0.02 270); /* ещё темнее при нажатии */
 
@@ -59,5 +61,20 @@ body,
   --color-error-hover: oklch(0.6 0.2 30);
   --color-error-active: oklch(0.52 0.2 30);
 
+  --radius-main: 10px;
 
- }
+
+
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+
+}
+
+ 
+@utility shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite linear;
+}
