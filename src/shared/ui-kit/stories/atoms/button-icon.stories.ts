@@ -17,5 +17,17 @@ export const Default: Story = {
   args: {
     Icon: AccountBalanceIcon,
     handleButton: () => {},
+    iconColor: 'text-primary',
+    iconColorHover: 'text-primary-hover',
+  },
+};
+
+export const Backdrop: Story = {
+  args: {
+    Icon: AccountBalanceIcon,
+    handleButton: () => {},
+    iconColor: 'text-primary',
+    iconColorHover: 'text-primary-hover',
+    backdrop: true,
   },
 };

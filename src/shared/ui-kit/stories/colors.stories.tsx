@@ -37,7 +37,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <div className="flex flex-wrap gap-6">
+    <div className="flex flex-wrap gap-30">
       {colorVars.map((c) => (
         <div key={c} className="flex flex-col items-center w-28">
           <div className={`w-30 h-30  ${c}`} style={{ backgroundColor: `var(${c})` }} />

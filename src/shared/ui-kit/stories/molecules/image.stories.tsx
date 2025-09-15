@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import { Image } from '../../atoms/image';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import { Image } from '../../molecules/image';
 import cardImg from '../mock/assets/card.jpg';
 
 const meta = {
@@ -18,5 +19,13 @@ export const Default: Story = {
     src: cardImg,
     alt: 'alt',
     size: 'md',
+    innerIcons: [
+      {
+        Icon: AccountBalanceIcon,
+        handleIcon: () => {},
+        iconColor: 'text-primary',
+        iconColorHover: 'text-primary-hover',
+      },
+    ],
   },
 };
