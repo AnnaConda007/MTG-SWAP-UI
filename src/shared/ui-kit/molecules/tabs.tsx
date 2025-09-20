@@ -21,7 +21,7 @@ export const Tabs = ({ content }: Props) => {
           <div className={`${activeIndex == i ? 'border-primary border-b-2 ' : ''}`}>
             <ButtonText
               variant="text"
-              valueColor="text-primary"
+              valueColor="text-dark"
               value={content.title}
               handleButton={() => handleTitle(i)}
               isBold={true}

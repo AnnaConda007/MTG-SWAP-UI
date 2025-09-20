@@ -6,9 +6,9 @@ type Variants = 'filled' | 'outlined' | 'text';
 interface Props {
   variant?: Variants;
   value: string;
-  valueColor?: string; // цвет текста
-  bgColor?: string; // цвет фона
-  borderColor?: string; // цвет бордера
+  valueColor?: string;
+  bgColor?: string;
+  borderColor?: string;
   handleButton: () => void;
   isBold: boolean;
 }
@@ -30,7 +30,6 @@ export const ButtonText = ({
     text: clsx(valueColor, 'hover:opacity-80 '),
   };
 
-  // Определяем цвет текста для <Text>
   const textColor = variant === 'filled' ? 'text-white' : valueColor;
 
   return (

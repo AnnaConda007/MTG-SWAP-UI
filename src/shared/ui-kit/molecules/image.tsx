@@ -21,7 +21,7 @@ interface Props {
 const sizeMap: Record<Size, string> = {
   sm: 'w-22 h-31',
   md: 'w-36 h-50',
-  lg: 'w-48 h-68',
+  lg: 'min-w-48 min-h-68',
 };
 
 export const Image = ({ src, alt, loading = 'lazy', size, innerIcons }: Props) => {
