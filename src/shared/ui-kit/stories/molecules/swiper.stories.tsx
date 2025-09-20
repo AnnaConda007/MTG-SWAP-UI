@@ -20,15 +20,15 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     elementsList: elementsList,
-    elementAmount: 4,
+    slidesPerView: 4,
   },
   render: (args) => <SwiperImg {...args} />,
 };
 
-export const DefaultOne: Story = {
+export const OneSlide: Story = {
   args: {
     elementsList: elementsList,
-    elementAmount: 1,
+    slidesPerView: 1,
   },
   render: (args) => <SwiperImg {...args} />,
 };

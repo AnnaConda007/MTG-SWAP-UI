@@ -3,18 +3,21 @@ import { Navigation, Mousewheel, Scrollbar } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
+import { EffectCards } from 'swiper/modules';
 
 interface Props {
   elementsList: React.ReactNode[];
-  elementAmount: number;
+  slidesPerView: number;
 }
 
-export const SwiperImg = ({ elementsList, elementAmount }: Props) => {
+export const SwiperImg = ({ elementsList, slidesPerView }: Props) => {
   return (
     <>
       <Swiper
-        modules={[Navigation, Mousewheel, Scrollbar]}
-        slidesPerView={elementAmount}
+        effect={slidesPerView === 1 ? 'cards' : ''}
+        modules={[Navigation, Mousewheel, Scrollbar, EffectCards]}
+        grabCursor={true}
+        slidesPerView={slidesPerView}
         navigation
         scrollbar={{
           hide: true,
@@ -27,7 +30,8 @@ export const SwiperImg = ({ elementsList, elementAmount }: Props) => {
           [&_.swiper-button-prev]:!w-6
     [&_.swiper-button-prev]:!h-6
     [&_.swiper-button-next]:!w-6
-    [&_.swiper-button-next]:!h-6  "
+    [&_.swiper-button-next]:!h-6 
+    [&_.swiper-slide-shadow]:hidden "
       >
         {elementsList.map((el, idx) => (
           <SwiperSlide key={idx}>
